@@ -1,0 +1,28 @@
+{
+  "name": "reactmax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endingwithali/reactmax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/endingwithali/reactmax/issues"
+  },
+  "homepage": "https://github.com/endingwithali/reactmax#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1397.0"
+  },
+  "devDependencies": {
+    "path-browserify": "^1.0.1",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

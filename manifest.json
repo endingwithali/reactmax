@@ -3,18 +3,15 @@
     "name": "React Max",
     "version": "0.1",
     "description": "REACT DOESNT REACT ENOUGH",
-    "options_page": "options.html",
+    "options_page": "options/options.html",
      "permissions": [
       "tabs"
     ],
     "content_scripts": [
         {
-        "js": ["scripts/content.js"],
+        // "js": ["scripts/content.js"],
+        "js": ["bundle.js"],
         "matches": ["*://react.dev/*","*://www.react.dev/*"]
         }
-    ],
-    "background": {
-        "matches":[ "*://react.dev/*","*://www.react.dev/*"],
-        "service_worker": "background.js"
-      }
+    ]
   }
