@@ -14,7 +14,9 @@ module.exports = {
   resolve: {
     fallback: { path: require.resolve("path-browserify") },
   },
-  plugins: [
+  optimization: {
+    minimize: false
+},  plugins: [
     new Dotenv()
   ],
   /**

@@ -12,3 +12,11 @@ to build run
 ```
 npm run build
 ```
+
+rebuild dynamically on save 
+npx webpack  --watch
+
+
+js run after random time without timing out main thread 
+
+https://codepen.io/taable/pen/gOQMgmd
