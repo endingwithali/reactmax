@@ -5,3 +5,10 @@
 //       }
 //     }
 //   });
+
+
+to build run 
+
+```
+npm run build
+```

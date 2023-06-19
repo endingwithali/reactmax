@@ -1,17 +1,22 @@
 // Import path for resolving file paths
 var path = require("path");
+const Dotenv = require("dotenv-webpack");
+
 module.exports = {
   // Specify the entry point for our app.
   entry: [path.join(__dirname, "./scripts/content.js")],
   // Specify the output file containing our bundled code.
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: "bundle.js",
   },
-   // Enable WebPack to use the 'path' package.
-   resolve:{
-  fallback: { path: require.resolve("path-browserify")}
-  }
+  // Enable WebPack to use the 'path' package.
+  resolve: {
+    fallback: { path: require.resolve("path-browserify") },
+  },
+  plugins: [
+    new Dotenv()
+  ],
   /**
   * In Webpack version v2.0.0 and earlier, you must tell 
   * webpack how to use "json-loader" to load 'json' files.
